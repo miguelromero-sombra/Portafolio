@@ -1,0 +1,105 @@
+
+body {
+    
+    /* Fondo oscuro con humo de neón similar al de la imagen */
+    background: radial-gradient(circle at 10% 20%, rgba(149, 0, 59, 0.4), transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(0, 150, 255, 0.4), transparent 40%),
+                radial-gradient(circle at 50% 10%, rgba(0, 255, 100, 0.3), transparent 35%),
+                radial-gradient(circle at 90% 20%, rgba(0, 200, 255, 0.3), transparent 30%),
+                #050508;
+    background-size: cover;
+}
+
+
+#nav{
+    width: 30px;
+    height: auto;
+}
+#img{
+    width: 80px;
+    height: auto;    
+}
+#imgD{
+    width: 100%;
+    height: auto;
+}
+.espacio{
+    margin: 10px;
+}
+
+ /* Estilos base para el footer */
+        .main-footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px 20px 20px 20px;
+            font-size: 14px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Sección de enlaces rápidos */
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-links a {
+            color: #b3b3b3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Línea divisoria moderna */
+        .footer-divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #444, transparent);
+            margin: 10px 0;
+        }
+
+        /* Sección del Copyright */
+        .footer-copyright {
+            color: #8c8c8c;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .footer-copyright span {
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        /* Ajuste responsivo para pantallas medianas/grandes */
+        @media (min-width: 768px) {
+            .footer-container {
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            
+            .footer-divider {
+                order: 2;
+            }
+            
+            .footer-copyright {
+                order: 3;
+                text-align: left;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
